@@ -2,3 +2,27 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+<app-top-bar></app-top-bar>
+<!--h1 [ngClass]="{
+   'black':h1Style;
+    'large':!h1Style;
+    }">AppHome</h1-->
+<div class="container">
+	<div> Product_Type :
+		<select>
+      <option *ngFor = "let i of Variety">{{i}}</option>
+   </select>
+  <div *ngFor="let i of numArr">
+  </div>  
+<div>
+   <span *ngIf = "isavailable">
+      Condition is valid.
+   </span>
+   <ng-template #condition1>Condition is valid</ng-template>
+   <ng-template #Fiscal>Condition is invalid</ng-template>
+</div>
+<button (click)="myClickFunction($event)">
+     Go </button>
+
+ <app-product-list *ngIf="isavailable"></app-product-list>
+ 

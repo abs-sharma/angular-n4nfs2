@@ -1,0 +1,21 @@
+<p>Ang7</p> 
+<select class="form-control">
+  <option value="">Please select Quarter</option>
+  <option *ngFor="let Quart of Quarter"
+          [value]="">
+          {{Quart}}
+  </option>
+</select>
+ <div *ngFor="let i of numArr">
+  </div>
+  <div>
+   <span *ngIf = "isavailable">
+      Condition is valid.
+   </span>
+   <ng-template #condition1>Condition is valid</ng-template>
+   <ng-template #Fiscal>Condition is invalid</ng-template>
+</div>
+
+<!--span>Amount available: {{products}}</span>
+ <button (click)=Fiscal()> fiscal </button>
+ </div-->
