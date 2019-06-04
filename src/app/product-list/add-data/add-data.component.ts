@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms'
 import { Router } from '@angular/router'
 @Component({
   selector: 'app-add-data',
-  templateUrl: './add-data.component.html',
+  template:``,
   styleUrls: ['./add-data.component.css']
 })
 export class AddDataComponent implements OnInit {
