@@ -3,7 +3,8 @@ import { FormsModule } from '@angular/forms'
 import { Router } from '@angular/router'
 @Component({
   selector: 'app-add-data',
-  template:`<div>{{SerialId}}</div>`,
+  template:`<input required minlength="5" maxlength="10" pattern="010" [(ngModel)]="SerialId" #SerialId=ngModel class="form-control">
+    <div class="alert alert-danger" *ngIf="!Serialid.valid&&Serialid.touched">`,
   styleUrls: ['./add-data.component.css']
 })
 export class AddDataComponent implements OnInit {
@@ -14,10 +15,9 @@ export class AddDataComponent implements OnInit {
       clickMe() {
       this.nCnt = this.nCnt + 1;
       this.msg = "Clicked: " + this.nCnt;
-  constructor()
-  { }
+
   
-  ngOnInit();
+  ngOnInit(){};
   
 
 }
