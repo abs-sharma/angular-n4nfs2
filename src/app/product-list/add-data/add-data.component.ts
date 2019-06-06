@@ -3,16 +3,22 @@ import { FormsModule } from '@angular/forms'
 import { Router } from '@angular/router'
 @Component({
   selector: 'app-add-data',
-  template:``,
+  template:`<div>{{SerialId}}</div>`,
   styleUrls: ['./add-data.component.css']
 })
 export class AddDataComponent implements OnInit {
   
   SerialId=" ";
+  msg = "";
+      nCnt: number = 0;
+      clickMe() {
+      this.nCnt = this.nCnt + 1;
+      this.msg = "Clicked: " + this.nCnt;
+  constructor()
+  { }
   
-  constructor(public router: Router) { }
+  ngOnInit();
+  
 
-  ngOnInit() {
-  }
-
+}
 }

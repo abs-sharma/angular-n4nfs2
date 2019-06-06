@@ -2,7 +2,7 @@
   <div class="form-group">
     <label for="SerialId">SerialId</label>
     <input required minlength="5" maxlength="10" pattern="010" [(ngModel)]="SerialId" #SerialId=ngModel class="form-control">
-    <div class="aler alert-danger" *ngIf="!Serialid.valid&&Serialid.touched">
+    <div class="alert alert-danger" *ngIf="!Serialid.valid&&Serialid.touched">
     <div *ngIf="SerialId.errors.required"></div>
     <div *ngIf="SerialId.errors.minlength">
       {{SerialId.erors.minlength.requiredlength}} </div>
@@ -15,6 +15,10 @@
      <textarea id="Description" cols="5" rows="5"class="form-control"></textarea>
   </div>
   <button class="btn btn-primary">Submit
+      <a [routerLink]="['/app-root']">
+      link to root component
+      </a>
+      
     <!--div *ngIf="this.router.url === '/app-root'">
     </div-->
   </button>

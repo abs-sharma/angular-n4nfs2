@@ -14,7 +14,8 @@ import { AddDataComponent } from './product-list/add-data/add-data.component';
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent }
+      { path: '', component: ProductListComponent },
+      { path: '', component: AddDataComponent }
     ])
   ],
   declarations: [
