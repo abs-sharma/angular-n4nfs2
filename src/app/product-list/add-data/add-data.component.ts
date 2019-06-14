@@ -17,7 +17,7 @@ export class AddDataComponent implements OnInit {
       this.msg = "Clicked: " + this.nCnt;
 
   
-  ngOnInit(){};
+  ngOnInit(){}
   
 
 }
